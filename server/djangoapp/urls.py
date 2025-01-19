@@ -20,6 +20,7 @@ urlpatterns = [
 
     #path for get_dealers
     path(route="get_dealers/", view=views.get_dealerships, name="get_dealers"),
+
     path(
         route="get_dealers/<str:state>",
         view=views.get_dealerships,
