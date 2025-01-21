@@ -79,7 +79,6 @@ def registration(request):
         return JsonResponse(data)
 
 def get_cars(request):
-
     for cmake in CarMake.objects.filter().all():
         print("cmake: ",cmake)
 
